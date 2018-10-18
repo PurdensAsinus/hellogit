@@ -1,10 +1,10 @@
 //class definition
 #ifndef DATA_H
-#define_H
+#define DATA_H
 
 class Data
 {
- private;
+ private:
  //attributes
  //properties
  int x;
