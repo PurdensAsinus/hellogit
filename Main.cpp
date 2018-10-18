@@ -4,6 +4,14 @@
 
 using namespace std;
 
+void bubbleSort(auto& D)
+{
+	for(int i=0;i<D.size();i++)//each iteration is a pass
+	for(int j=0;j<D.size()-1;j++)
+	if(D[j].getX()>D[j+1].getX())
+	swap(D[j],D[j+1]);
+}
+
 int main()
 {
  vector<Data> v;
@@ -27,4 +35,7 @@ int main()
   cout<<a.getX()<<" ";
   cout<<a.getY()<<endl;
  }
+ bubbleSort(v);
 }
+
+
